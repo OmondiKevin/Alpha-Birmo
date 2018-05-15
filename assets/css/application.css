@@ -1,0 +1,102 @@
+/* global body padding */
+body {
+  padding-top:    20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top:    50px;
+    padding-bottom: 50px;
+  }
+  .center{
+  margin-left: 0em;
+  }
+}
+
+
+/* global spacing overrides */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-top: 0;
+}
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.navbar-fixed-top,
+.navbar-static-top {
+  border-bottom: 0;
+}
+.center{
+  margin-left: 20em;
+  text-align: center;
+}
+.center{
+  /* text-align: center; */
+  /* margin-left: 1.7em; */
+  margin: 0 auto;
+}
+
+.icon{
+  margin-left: 1.7em;
+  align-self: center;
+}
+.btn{
+  width: 15em;
+  margin-top: 1em;
+}
+.title{
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+.statcard-main{
+  width: 90%;
+  margin: 0 auto;
+  height: 250px;
+}
+/* #statcard-mini{
+  float: right;
+  margin-right: 310px;
+} */
+.statcard-mini-first{
+  width: 28%;
+  margin-left: 3em;
+  height: 180px;
+}
+.statcard-mini-second{
+  width: 28%;
+  margin-left: 3em;
+  height: 180px;
+  position: relative;
+  top: -200px;
+  left: 270px;
+}
+.statcard-mini-third{
+  width: 28%;
+  margin-left: 3em;
+  height: 180px;
+  position: relative;
+  left: 530px;
+  top: -400px;
+}
+.statcard-mini-four{
+  width: 28%;
+  margin-left: 3em;
+  height: 180px;
+  position: relative;
+  top: -400px;
+  bottom: 0px;
+}
+.sidebar-form{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+.list-group{
+  margin: 0 auto;
+  width: 90%;
+  margin-top: -350px;
+}
