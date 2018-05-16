@@ -8,7 +8,8 @@
   <li>Javascript</li>
   <li>JQuery</li>
 </ol>
-<p>Co-operators</p>
+<p>Collaborators</p>
 <ol>
   <li>Isaack Motanya</li>
+  <li>Kevin Omondi</li>
 </ol>
