@@ -100,3 +100,14 @@ hr {
   width: 90%;
   margin-top: -350px;
 }
+
+.map{
+  width: 40em;
+  height: 20em;
+  background-color: #1686B0;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.card-img-top{
+  width: 14.3em;
+}
