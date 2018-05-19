@@ -1,0 +1,241 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        Birmo
+      
+    </title>
+
+    <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic" rel="stylesheet">
+
+    
+    <link href="assets/css/toolkit-inverse.css" rel="stylesheet">
+      
+    <link href="assets/css/application.css" rel="stylesheet">
+
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      body {
+        width: 1px;
+        min-width: 100%;
+        *width: 100%;
+      }
+
+    </style>
+  </head>
+
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 sidebar">
+        <nav class="sidebar-nav">
+          <div class="sidebar-header">
+            <button class="nav-toggler nav-toggler-sm sidebar-toggler" type="button" data-toggle="collapse" data-target="#nav-toggleable-sm">
+              <span class="sr-only">Toggle nav</span>
+            </button>
+            <a class="sidebar-brand img-responsive" href="index.html">
+              <span class="icon icon-leaf sidebar-brand-icon"></span>
+            </a>
+          </div>
+
+          <div class="collapse nav-toggleable-sm" id="nav-toggleable-sm">
+           <!--  <form class="sidebar-form">
+              <input class="form-control" type="text" placeholder="Search...">
+              <button type="submit" class="btn-link">
+                <span class="icon icon-magnifying-glass"></span>
+              </button>
+            </form> -->
+            <ul class="nav nav-pills nav-stacked">
+              <li class="nav-header">Menu</li>
+              <li>
+                <a href="index.html">Overview</a>
+              </li>
+              <li >
+                <a href="parking.html">Parking maps</a>
+              </li>
+              <li class="active">
+                <a href="enforcement.html">Enforcement</a>
+              </li>
+              <li >
+                <a href="#">Birmo Buttons</a>
+              </li>
+              <li >
+                <a href="#">Apps</a>
+              </li>
+              <li >
+                <a href="#">Notices</a>
+              </li>
+              <li >
+                <a href="#">Employees</a>
+              </li>
+              <li >
+                <a href="#">Support Center</a>
+              </li>
+              <li >
+                <a href="#">Account & Settings</a>
+              </li>
+              <button type="button" class="btn btn-primary">Add Parking</button>
+              <button type="button" class="btn btn-primary">Request Statistics</button>
+
+            </ul>
+            <hr class="visible-xs m-t">
+          </div>
+        </nav>
+      </div>
+      <div class="col-sm-9 content">
+        <div class="dashhead">
+  <div class="center dashhead-titles">
+    <span class="icon icon-leaf sidebar-brand-icon"></span>
+    <h2 class="dashhead-title">Location Name</h2>
+  </div>
+
+</div>
+
+  <hr class="m-t">
+  <div>
+     <form class="sidebar-form" style="width: 75%">
+        <input class="form-control" type="text" placeholder="Search...">
+        <button type="submit" class="btn-link">
+          <span class="icon icon-magnifying-glass"></span>
+        </button>
+      </form>
+  </div>
+  <h2 class="title">Location</h2>
+  <div class="map">
+    
+  </div>
+  <h2 class="title">Officer on Duty</h2>
+  <div>
+    <div class="card" style="width: 20rem;float: right;">
+      <img class="card-img-top" src="assets/img/test.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <li class="list-group-header">Details</li>
+          <li class="list-group-item">Name:</li>
+          <li class="list-group-item">Employee ID: </li>
+          <li class="list-group-item">Status: (Safe/alert) </li>
+          <li class="list-group-item">Tickets issued: </li>
+      </div>
+    </div>
+
+     <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="assets/img/test.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <li class="list-group-header">Details</li>
+          <li class="list-group-item">Name:</li>
+          <li class="list-group-item">Employee ID: </li>
+          <li class="list-group-item">Status: (Safe/alert) </li>
+          <li class="list-group-item">Tickets issued: </li>
+      </div>
+    </div>
+
+      <div class="card" style="width: 20rem;margin-left: 23em;margin-top: -27.5em;margin-bottom: 5em;">
+      <img class="card-img-top" src="assets/img/test.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <li class="list-group-header">Details</li>
+          <li class="list-group-item">Name:</li>
+          <li class="list-group-item">Employee ID: </li>
+          <li class="list-group-item">Status: (Safe/alert) </li>
+          <li class="list-group-item">Tickets issued: </li>
+      </div>
+    </div>
+    
+  </div>
+  <div>
+    <h2 class="title">Tickets Database</h2>
+    <form class="sidebar-form"style="width: 20em; float: right;">
+        <input class="form-control" type="text" placeholder="Search...">
+        <button type="submit" class="btn-link">
+          <span class="icon icon-magnifying-glass"></span>
+        </button>
+    </form>
+    <div class="table-full"style="clear: both;">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+               <th style="text-align:center;vertical-align: middle;">Driver Name</th>
+              <th style="text-align:center;vertical-align: middle;">Vehicle ID</th>
+              <th style="text-align:center;vertical-align: middle;">Officer</th>
+              <th style="text-align:center;vertical-align: middle;">Officer ID</th>
+              <th style="text-align:center;vertical-align: middle;">Ticket ID</th>
+              <th style="text-align:center;vertical-align: middle;">Status <br> paid/unpaid</th>
+              <th style="text-align:center;vertical-align: middle;">Ticket <br>Issue<br>Location</th>
+              <th style="text-align:center;vertical-align: middle;">Photos</th>
+              <th style
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+            </tr>
+             </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2 class="title towed">Towed Vehicle Database</h2>
+    <form class="sidebar-form"style="width: 20em; float: right;">
+        <input class="form-control" type="text" placeholder="Search...">
+        <button type="submit" class="btn-link">
+          <span class="icon icon-magnifying-glass"></span>
+        </button>
+    </form>
+    <div class="table-full"style="clear: both;">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="text-align:center;vertical-align: middle;">Driver Name</th>
+              <th style="text-align:center;vertical-align: middle;">Vehicle ID</th>
+              <th style="text-align:center;vertical-align: middle;">Officer</th>
+              <th style="text-align:center;vertical-align: middle;">Officer ID</th>
+              <th style="text-align:center;vertical-align: middle;">Ticket ID</th>
+              <th style="text-align:center;vertical-align: middle;">Status <br> paid/unpaid</th>
+              <th style="text-align:center;vertical-align: middle;">Tow <br>Location</th>
+              <th style="text-align:center;vertical-align: middle;">Photos</th>
+              <th style="text-align:center;vertical-align: middle;">Warranty Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+            </tr>
+             </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+    
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/tablesorter.min.js"></script>
+    <script src="assets/js/toolkit.js"></script>
+    <script src="assets/js/application.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script>
+      // execute/clear BS loaders for docs
+      $(function(){while(window.BS&&window.BS.loader&&window.BS.loader.length){(window.BS.loader.pop())()}})
+    </script>
+  </body>
+</html>
+
