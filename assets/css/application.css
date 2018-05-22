@@ -111,3 +111,62 @@ hr {
 .card-img-top{
   width: 14.3em;
 }
+.border{
+  border-style: solid;
+  border-color: white;
+  border-width: 0.5px;
+  width: 110px;
+  height: 40px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.order-more{
+    margin: 0 auto;
+   margin-left: 20%;
+   margin-right: 20%;
+}
+.order-more-second{
+
+    margin: 0 auto;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 130%;
+
+}
+.title{
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.buttons{
+  width: 30%;
+  float: right;
+  margin: 0 auto;
+  margin-right: 5%;
+  margin-top: 4%;
+  margin-bottom: 30px;
+}
+.BB-border{
+  clear: both;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.5px;
+  width: 110px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+.table-border{
+  border-collapse: collapse;
+  
+  
+}
+.table-border th td{
+  border: 1px solid white;
+} 
