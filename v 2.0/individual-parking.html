@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Birmo</title>
+     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Vendor CSS -->
+    <link href="vendors/bower_components/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet">
+    <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+    <!-- Load css for default floor selector -->
+	<link href="https://app.mapsindoors.com/mapsindoors/js/sdk/ui/FloorSelector.css" type="text/css" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="css/app_1.min.css" rel="stylesheet">
+    <link href="css/app_2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	
+    <header id="header" class="clearfix">
+        <ul class="h-inner">
+            <li class="hi-trigger ma-trigger" data-ma-action="sidebar-open" data-ma-target="#sidebar">
+                <div class="line-wrap">
+                    <div class="line top"></div>
+                    <div class="line center"></div>
+                    <div class="line bottom"></div>
+                </div>
+            </li>
+            <li class="hi-logo hidden-xs">
+                <a href="index-2.html">Birmo</a>
+            </li>
+            <li class="pull-right">
+                <ul class="hi-menu">
+                    <li data-ma-action="search-open">
+                        <a href="#"><i class="him-icon zmdi zmdi-search"></i></a>
+                    </li>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" href="#"><i class="him-icon zmdi zmdi-more-vert"></i></a>
+                    <ul class="dropdown-menu dm-icon pull-right">
+                        <li class="hidden-xs">
+                            <a data-ma-action="fullscreen" href="#"><i class="zmdi zmdi-fullscreen"></i> Toggle Fullscreen</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Top Search Content -->
+            <div class="h-search-wrap">
+                <div class="hsw-inner">
+                    <i class="hsw-close zmdi zmdi-arrow-left" data-ma-action="search-close"></i>
+                    <input type="text">
+                </div>
+            </div>
+        </header>
+        <section id="main">
+            <aside id="sidebar" class="sidebar c-overflow">
+                <ul class="main-menu">
+                    <li class="sub-menu">
+                        <a href="index-2.html" data-ma-action="submenu-toggle"><i class="zmdi zmdi-home"></i> Home</a>
+                        
+                        <ul>
+                            <li><a class="active" href="index-2.html">Overview</a></li>
+                            <li><a href="overview-table-1.html">Data Table I</a></li>
+                            <li><a href="overview-table-2.html">Data Table II</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu active">
+                        <a href="parking.html" data-ma-action="submenu-toggle"><i class="zmdi zmdi-parking"></i> Parking</a>
+                        
+                        <ul>
+                            <li><a href="parking.html">Main Area</a></li>
+                            <li><a class="active" href="individual-parking.html">Individual Parking Areas</a></li>
+                            
+                        </ul>
+                    </li>
+                     <li class="sub-menu">
+                        <a href="parking.html" data-ma-action="submenu-toggle"><i class="zmdi zmdi-case"></i> Enforcement</a>
+                        
+                        <ul>
+                            <li><a href="enforcement.html">Location</a></li>
+                            <li><a href="officer-on-duty.html">Officer on duty</a></li>
+                            <li><a href="ticket-database.html">Ticket Database</a></li>
+                            <li><a href="towed-vehicle-database.html">Towed Vehicle Database</a></li>
+                            
+                        </ul>
+                    </li>
+                     <li class="sub-menu">
+                        <a href="module1.html" data-ma-action="submenu-toggle"><i class="zmdi zmdi-blogger"></i> Birmo Buttons</a>
+                        
+                        <ul>
+                            <li><a href="module1.html">Module 1</a></li>
+                            <li><a href="bb-database.html">BB Database</a></li> 
+                        </ul>
+                    </li>
+                      <li >
+                        <a href="apps.html"><i class="zmdi zmdi-apps"></i> Apps</a>
+                    </li>
+                     <li>
+                        <a href="notices.html"><i class="zmdi zmdi-notifications-active"></i> Notices</a>
+                    </li>
+                     <li>
+                        <a href="employees.html"><i class="zmdi zmdi-account"></i> Employees</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="zmdi zmdi-shield-check"></i> Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="zmdi zmdi-account"></i> Account & Settings</a>
+                    </li>
+
+                </ul><li>
+                        <a href="employees.html"><i class="zmdi zmdi-account"></i> Employees</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="zmdi zmdi-shield-check"></i> Support Center</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="zmdi zmdi-account"></i> Account & Settings</a>
+                    </li>
+            </aside>
+            <section id="content">
+                <div class="container">
+                    <div class="block-header">
+                        <h2>Location Name</h2>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Individual Parking Areas <small></small></h2>
+                        </div>
+                        <div class="card-body">
+                            <div id="maps">
+                                <div id="submap" class="submap">
+                                
+                                </div>
+                                <div id="submap1" class="submap">
+                                
+                                </div>
+                                <div id="submap2" class="submap">
+                                
+                                </div>
+                                <div id="submap3" class="submap">
+                                
+                                </div> 
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <!--  -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Details <small></small></h2>
+                        </div>
+                        <div class="card-body">
+                           <div class="">
+                                <ul class="list">
+                                <li class="item">Location: name / adress</li>
+                                <li class="item">Capacity: </li>
+                                <li class="item">Average Revenue: </li>
+                                <li class="item">Parking hours: </li>
+                                <li class="item">Camera Viewer: </li>
+                               </ul>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer id="footer">
+        Copyright &copy; 2018 Birmo
+    </footer>
+    <!-- Page Loader -->
+    <div class="page-loader">
+        <div class="preloader pls-white">
+            <svg class="pl-circular" viewBox="25 25 50 50">
+                <circle class="plc-path" cx="50" cy="50" r="20" />
+            </svg>
+            <p>Please wait...</p>
+        </div>
+    </div>
+    <!-- Older IE warning message -->
+    <!--[if lt IE 9]>
+    <div class="ie-warning">
+        <h1 class="c-white">Warning!!</h1>
+        <p>You are using an outdated version of Internet Explorer, please upgrade <br/>to any of the following web browsers to access this website.</p>
+        <div class="iew-container">
+            <ul class="iew-download">
+                <li>
+                    <a href="http://www.google.com/chrome/">
+                        <img src="img/browsers/chrome.png" alt="">
+                        <div>Chrome</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.mozilla.org/en-US/firefox/new/">
+                        <img src="img/browsers/firefox.png" alt="">
+                        <div>Firefox</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.opera.com">
+                        <img src="img/browsers/opera.png" alt="">
+                        <div>Opera</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.apple.com/safari/">
+                        <img src="img/browsers/safari.png" alt="">
+                        <div>Safari</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie">
+                        <img src="img/browsers/ie.png" alt="">
+                        <div>IE (New)</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <p>Sorry for the inconvenience!</p>
+    </div>
+    <![endif]-->
+    <!-- Javascript Libraries -->
+	<!-- <script>
+		function myMap() {
+		var mapOptions = {
+		    center: new google.maps.LatLng(51.5, -0.12),
+		    zoom: 10,
+		    mapTypeId: google.maps.MapTypeId.HYBRID
+		}
+		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+	</script> -->
+	<script type="text/javascript">
+		var myGoogleMap, myMapsIndoors;
+        var subMap1,submap2,submap3;
+
+		var init = function () {
+
+		   // Setup google map
+		   myGoogleMap = new google.maps.Map(document.getElementById('submap'), { center: { lat: 57.085809, lng: 9.9573899 }, zoom: 17 });
+           subMap1 = new google.maps.Map(document.getElementById('submap1'), { center: { lat: 57.085809, lng: 9.9573899 }, zoom: 17 });
+            subMap2 = new google.maps.Map(document.getElementById('submap2'), { center: { lat: 57.085809, lng: 9.9573899 }, zoom: 17 });
+             subMap3 = new google.maps.Map(document.getElementById('submap3'), { center: { lat: 57.085809, lng: 9.9573899 }, zoom: 17 });
+
+		   // Setup MapsIndoors
+		   myMapsIndoors= new mapsindoors.MapsIndoors({ map: myGoogleMap });
+
+		   // Add a floor selector
+		   // var div = document.createElement('div');
+		   // var floorSelector = new mapsindoors.FloorSelector(div, myMapsIndoors);
+		   myGoogleMap.controls[google.maps.ControlPosition.RIGHT_TOP].push(div);
+
+		};
+	</script>
+
+    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="vendors/bower_components/flot/jquery.flot.js"></script>
+    <script src="vendors/bower_components/flot/jquery.flot.resize.js"></script>
+    <script src="vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
+    <script src="vendors/sparklines/jquery.sparkline.min.js"></script>
+    <script src="vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+    <script src="vendors/bower_components/moment/min/moment.min.js"></script>
+    <script src="vendors/bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
+    <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+    <script src="vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+    <script src="vendors/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- Placeholder for IE9 -->
+    <!--[if IE 9 ]>
+    <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <![endif]-->
+    <script src="js/app.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=geometry&key=AIzaSyD_KQAR4AbNXbssrDkb94s8TQ2IDEmjGTE&callback=init" async defer></script>
+	<!-- Load css for default floor selector -->
+	<link href="https://app.mapsindoors.com/mapsindoors/js/sdk/ui/FloorSelector.css" type="text/css" rel="stylesheet" />
+	
+</body>
+<!-- Mirrored from byrushan.com/projects/ma/1-6-1/jquery/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 29 May 2018 08:37:28 GMT -->
+</html>
