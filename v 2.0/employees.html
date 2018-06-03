@@ -314,12 +314,7 @@
 		   // Setup google map
 		   myGoogleMap = new google.maps.Map(document.getElementById('map'), { center: { lat: 57.085809, lng: 9.9573899 }, zoom: 17 });
 
-		   // Setup MapsIndoors
-		   myMapsIndoors= new mapsindoors.MapsIndoors({ map: myGoogleMap });
-
-		   // Add a floor selector
-		   // var div = document.createElement('div');
-		   // var floorSelector = new mapsindoors.FloorSelector(div, myMapsIndoors);
+		  
 		   myGoogleMap.controls[google.maps.ControlPosition.RIGHT_TOP].push(div);
 
 		};
